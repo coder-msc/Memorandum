@@ -1,15 +1,22 @@
-1、导包
-
+## 1、导包
+···
 truncate usertable //清空数据库表，并且字段ID也清楚，从0开始
-
-Spring MVC工程
+···
+## Spring MVC工程
+···
 1、在web.xml中导入提示包   ---》前端控制器 dispatcherservlet(ALT+/)---将servlet-name的地址都改成SpringMVC
 2、接着创建XML文件  SpringMVC-servlet  -----》包扫描所有组件--《context:component-scan base-packeg="com.XX"》--》配置视图解析器
-
+···
+···
 1、在请求体上加@ResponseBody//返回JSON数据	@RequestMapping（“/no1request”）
+···
+···
  2、页面加上绝对路径<% pageContext.setAttribute ("ctp",request.getContentPath());%>
+···
+···
 3、调用请求方法时： <a href="${ctp}/no1request">点击发送请求</a>
-
+···
+···
 4、AJAX 绑定事件：
 	<script type="text/javascript">
 		$("a:frist").click(function(){	//点击发送AJAX请求
@@ -27,8 +34,10 @@ url:"${ctp}/no1request",	type:"GET",
 		
 		})
 
-
+···
+···
 5、@RequestBody  //接收请求数据
+···
 
       
 
