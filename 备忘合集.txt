@@ -1,25 +1,25 @@
-## 1¡¢µ¼°ü-----------
-¡¤¡¤¡¤
-truncate usertable //Çå¿ÕÊı¾İ¿â±í£¬²¢ÇÒ×Ö¶ÎIDÒ²Çå³ş£¬´Ó0¿ªÊ¼
-¡¤¡¤¡¤
-## Spring MVC¹¤³Ì
-¡¤¡¤¡¤
-1¡¢ÔÚweb.xmlÖĞµ¼ÈëÌáÊ¾°ü   ---¡·Ç°¶Ë¿ØÖÆÆ÷ dispatcherservlet(ALT+/)---½«servlet-nameµÄµØÖ·¶¼¸Ä³ÉSpringMVC
-2¡¢½Ó×Å´´½¨XMLÎÄ¼ş  SpringMVC-servlet  -----¡·°üÉ¨ÃèËùÓĞ×é¼ş--¡¶context:component-scan base-packeg="com.XX"¡·--¡·ÅäÖÃÊÓÍ¼½âÎöÆ÷
-¡¤¡¤¡¤
-¡¤¡¤¡¤
-1¡¢ÔÚÇëÇóÌåÉÏ¼Ó@ResponseBody//·µ»ØJSONÊı¾İ	@RequestMapping£¨¡°/no1request¡±£©
-¡¤¡¤¡¤
-¡¤¡¤¡¤
- 2¡¢Ò³Ãæ¼ÓÉÏ¾ø¶ÔÂ·¾¶<% pageContext.setAttribute ("ctp",request.getContentPath());%>
-¡¤¡¤¡¤
-¡¤¡¤¡¤
-3¡¢µ÷ÓÃÇëÇó·½·¨Ê±£º <a href="${ctp}/no1request">µã»÷·¢ËÍÇëÇó</a>
-¡¤¡¤¡¤
-¡¤¡¤¡¤
-4¡¢AJAX °ó¶¨ÊÂ¼ş£º
+## 1ã€å¯¼åŒ…
+```
+truncate usertable //æ¸…ç©ºæ•°æ®åº“è¡¨ï¼Œå¹¶ä¸”å­—æ®µIDä¹Ÿæ¸…æ¥šï¼Œä»0å¼€å§‹
+```
+## Spring MVCå·¥ç¨‹
+```
+1ã€åœ¨web.xmlä¸­å¯¼å…¥æç¤ºåŒ…   ---ã€‹å‰ç«¯æ§åˆ¶å™¨ dispatcherservlet(ALT+/)---å°†servlet-nameçš„åœ°å€éƒ½æ”¹æˆSpringMVC
+2ã€æ¥ç€åˆ›å»ºXMLæ–‡ä»¶  SpringMVC-servlet  -----ã€‹åŒ…æ‰«ææ‰€æœ‰ç»„ä»¶--ã€Šcontext:component-scan base-packeg="com.XX"ã€‹--ã€‹é…ç½®è§†å›¾è§£æå™¨
+```
+```
+1ã€åœ¨è¯·æ±‚ä½“ä¸ŠåŠ @ResponseBody//è¿”å›JSONæ•°æ®	@RequestMappingï¼ˆâ€œ/no1requestâ€ï¼‰
+```
+```
+ 2ã€é¡µé¢åŠ ä¸Šç»å¯¹è·¯å¾„<% pageContext.setAttribute ("ctp",request.getContentPath());%>
+```
+```
+3ã€è°ƒç”¨è¯·æ±‚æ–¹æ³•æ—¶ï¼š <a href="${ctp}/no1request">ç‚¹å‡»å‘é€è¯·æ±‚</a>
+```
+```
+4ã€AJAX ç»‘å®šäº‹ä»¶ï¼š
 	<script type="text/javascript">
-		$("a:frist").click(function(){	//µã»÷·¢ËÍAJAXÇëÇó
+		$("a:frist").click(function(){	//ç‚¹å‡»å‘é€AJAXè¯·æ±‚
 		$.ajax({
 url:"${ctp}/no1request",	type:"GET",	
 
@@ -34,10 +34,10 @@ url:"${ctp}/no1request",	type:"GET",
 		
 		})
 
-¡¤¡¤¡¤
-¡¤¡¤¡¤
-5¡¢@RequestBody  //½ÓÊÕÇëÇóÊı¾İ
-¡¤¡¤¡¤
+```
+```
+5ã€@RequestBody  //æ¥æ”¶è¯·æ±‚æ•°æ®
+```
 
       
 
