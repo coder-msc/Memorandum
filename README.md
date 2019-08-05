@@ -1,5 +1,8 @@
 # git
  基本操作
+```
+git 的基本操作
+```
 ## create a new repository on the command line 
 ```
 echo "# git1" >> README.md
