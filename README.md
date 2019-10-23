@@ -33,3 +33,8 @@ git pull –rebase origin master意为先取消commit记录，并且把它们临
 ```
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 ```
+```
+。git status显示的文件三种状态，
+。红色：表示修改了原来管理起来的文件，或者是新增的文件
+。绿色：表示该文件已经被git管理起来了。
+```
