@@ -13,6 +13,7 @@ git add README.md
 git commit -m "first commit" 
 git remote add origin https://github.com/Devil-K/git1.git 
 git push -u origin master 
+git reset --hard 39fa9a1bccf72e6a97756c28209617ca  //后面接上版本编号，即可回滚到那个版本
 ```
 
 ## push an existing repository from the command line 
