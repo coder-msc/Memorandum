@@ -5,6 +5,8 @@ git 的基本操作
 ```
 ## create a new repository on the command line 
 ```
+git config --global user.email 1771947201@qq.com//设置账户，邮箱
+git config --list // 查看账户信息
 echo "# git1" >> README.md
 git init 
 git add README.md
