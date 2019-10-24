@@ -14,6 +14,9 @@ git commit -m "first commit"
 git remote add origin https://github.com/Devil-K/git1.git 
 git push -u origin master 
 git reset --hard 39fa9a1bccf72e6a97756c28209617ca  //后面接上版本编号，即可回滚到那个版本
+
+git reflog //
+回滚后，前面的版本会不见，此时用git reflog 即可查看所有的版本（包括回滚查看不到的），此时用git reset --hard 版本号，即可前滚（回滚）
 ```
 
 ## push an existing repository from the command line 
