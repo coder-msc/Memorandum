@@ -25,6 +25,7 @@ git branch bug //创建bug分支
 当在分支上开发/修改bug后 提交后在合并到主分支上（master）
 1、先回到主分支 git checkout master
 2、git merge dev 合并到主分支上
+3、记得卸磨杀驴，修改完bug后一般要删除bug分支    git branch -d bug 
 
 注意：若多个分支修改了同一行代码，则会产生冲突，需要手动解决冲突在进行提交至主分支
 ```
