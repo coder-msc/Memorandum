@@ -44,6 +44,18 @@ git pull –rebase origin master意为先取消commit记录，并且把它们临
 2、进入拉取完成的目录在 git init 
 3、之后才可以修改进行提交
 ```
+## 快速解决冲突
+```
+1、安装beyond compare
+2、在git中配置
+。git config --local merge.tool bc3
+。git config --local mergetool.path '/url/local/bin/bcomp'
+。git config --local mergetool.keepBackup false  //不保留备份文件
+3、应用beyond compare解决冲突
+。git mergetool
+
+在软件里用图形界面方式直接修改即可
+```
 ## 实际开发中
 ```
 1、先克隆代码到本机；
