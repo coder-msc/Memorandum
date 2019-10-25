@@ -43,7 +43,17 @@ git pull –rebase origin master意为先取消commit记录，并且把它们临
 1、git clone 地址
 2、进入拉取完成的目录在 git init 
 3、之后才可以修改进行提交
-
+```
+###实际开发中
+```
+1、先克隆代码到本机；
+2、切换到DEV分支进行开发，将Master分支的代码merge到Dev分支；
+3、进行开发 （x修改代码，提交）
+4、第二台电脑（家）开发时候，切换到DEV分支，拉代码，git pull origin Dev
+5、继续开发，提交
+6、第一台电脑（公司）再次拉代码
+7、需要上线，本地切换到Master分支，将DEV合并到Master分支；
+8、将分支都提交
 ```
 ## import code from another repository 
 ```
