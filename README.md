@@ -1,3 +1,27 @@
+### 新版本GitHub操作
+
+### …or create a new repository on the command line
+```
+echo "# SpringSecrityDemo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coder-msc/SpringSecrityDemo.git
+git push -u origin main
+```
+
+### 创建已存在仓库 or push an existing repository from the command line
+```$xslt
+git remote add origin git@github.com:coder-msc/SpringSecrityDemo.git
+git branch -M main
+git push -u origin main
+```
+--------------------------------------------------------------------------------------------------------
+
+
+
+
 # git
  基本操作
 ```
@@ -76,3 +100,9 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 。红色：表示修改了原来管理起来的文件，或者是新增的文件
 。绿色：表示该文件已经被git管理起来了。
 ```
+
+
+
+
+
+
