@@ -64,9 +64,7 @@ public class 找出最小的K个数 {
     public static void BigHeap(int[] arr,int index ,int len){
         int temp =arr[index];
         for(int k = 2*index+1;k<len;k=2*k +1){
-            if((k+1)<len && arr[k+1] > arr[k]){
-                k++;
-            }
+            if((k+1)<len && arr[k+1] > arr[k])
             if(temp<arr[k]){
                 arr[index] =arr[k];
                index=k;
