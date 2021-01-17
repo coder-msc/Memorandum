@@ -36,29 +36,28 @@ public class 插入排序 {
         //{3, 4, 2, 1, -7, 0}
         for (i = 1; i < arr.length; i++) {
             int tmp = arr[i];
-            for (j = i ; j >= 0; j--) {
-                if (arr[j-1] > tmp) {
-                    arr[j] = arr[j-1];
-                }else{
+            for (j = i; j >= 0; j--) {
+                if (arr[j - 1] > tmp) {
+                    arr[j] = arr[j - 1];
+                } else {
                     break;
                 }
             }
             arr[j] = tmp;
         }
         // 第二种方法
-        for(int m=1;i<arr.length;i++){
-            int tar=arr[m];
-            int count = m-1;
-            while(count>=0 && arr[count]>tar){
-                arr[count+1]=arr[count];
+        for (int m = 1; i < arr.length; i++) {
+            int tar = arr[m];
+            int count = m - 1;
+            while (count >= 0 && arr[count] > tar) {
+                arr[count + 1] = arr[count];
                 count--;
             }
-            arr[count+1] =tar;
+            arr[count + 1] = tar;
         }
-
-
         return arr;
     }
-
-
 }
+
+
+//p
