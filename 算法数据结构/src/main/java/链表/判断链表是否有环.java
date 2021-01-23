@@ -39,5 +39,17 @@ public class 判断链表是否有环 {
         return false;
     }
 
-
+    //更简洁的做法
+public static boolean isLoopNodelist(ListNode head){
+        ListNode fast=head;
+        ListNode slow=head;
+        while(fast!=null&& fast.next!=null){
+            fast=fast.next.next;
+            slow=slow.next;
+            if(fast!=null&&fast.val==slow.val){
+                return true;
+            }
+        }
+        return false;
+}
 }
