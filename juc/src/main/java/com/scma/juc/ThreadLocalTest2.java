@@ -37,7 +37,7 @@ public static ThreadLocal<Integer> number=new ThreadLocal<Integer>();
 
                 }
             });
-            executorService.shutdown(); //线程池用完需要关闭
+//            executorService.shutdown(); //线程池用完需要关闭 提前关闭 会导致异常   因为线程还在执行  但是把线程池关了
 
         }
         executorService.shutdown(); //线程池用完需要关闭
