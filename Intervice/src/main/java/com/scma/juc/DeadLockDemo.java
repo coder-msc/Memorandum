@@ -4,6 +4,12 @@ package com.scma.juc;
 import java.util.concurrent.TimeUnit;
 /*
 * 产生死锁的主要原因
+*
+* 1、资源互斥
+* 2、资源不可抢占
+* 3、循环等待
+* 4、占有且等待
+*
 * */
 class HoldThread implements Runnable {
 
@@ -20,8 +26,8 @@ class HoldThread implements Runnable {
         synchronized (lockA) {
             System.out.println(Thread.currentThread().getName() + "\t 自己持有锁" + lockA + "尝试获得" + lockB);
             try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
+                TimeUnit.SECONDS.sleep(1);  //休眠一会 让 B这个线程进来 占用B这个锁  这样 A 和B 锁 都被占用   A里等待 B释放锁   B里等待A释放锁  造成循环等待  形成死锁
+            } catch (Exception e) {
                 e.printStackTrace();
             }
             synchronized (lockB) {

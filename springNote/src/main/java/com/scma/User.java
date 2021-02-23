@@ -11,7 +11,4 @@ public class User {
         this.name = name;
     }
 
-    User(String name){
-        this.name=name;
-    }
 }

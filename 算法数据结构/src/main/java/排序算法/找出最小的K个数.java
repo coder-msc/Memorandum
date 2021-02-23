@@ -26,9 +26,9 @@ public class 找出最小的K个数 {
 
     public static ArrayList<Integer> GetLeastNumbers_Solution1(int[] arr, int k) {
         if (arr.length < k) {
-            return new ArrayList<>();
+            return new ArrayList<Integer>();
         }
-        ArrayList<Integer> res =new ArrayList<>();
+        ArrayList<Integer> res =new ArrayList<Integer>();
          //创建前K个数
         int[] a = new int[k];
         for (int i = 0; i < k; i++) {
