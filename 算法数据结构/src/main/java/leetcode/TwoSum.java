@@ -11,7 +11,7 @@ import java.util.List;
 public class TwoSum {
     // {1,3,4,5,5}  7
     public static void main(String[] args) {
-        int[] test = {1, 1,2,2,3,3, 4,};
+        int[] test = {1, 1, 2, 2, 3, 3, 4,};
         int tar = 7;
         int[] ints = twoSum(test, tar);
         System.out.println(twoSum(test, tar));
@@ -31,6 +31,20 @@ public class TwoSum {
             }
         }
 
+        return null;
+    }
+//优化
+    public static int[] twoSum2(int[] arr, int tar) {
+        if (arr == null || arr.length == 0) {
+            return new int[0];
+        }
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for (int i = 0; i < arr.length; i++) {
+            if(map.containsKey(tar-arr[i])){
+                return new int[]{i,map.get(tar-arr[i])};
+            }
+            map.put(arr[i],i);
+        }
         return null;
     }
 }
