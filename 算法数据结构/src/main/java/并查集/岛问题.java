@@ -23,6 +23,11 @@ package 并查集;
 //使用常规解法  不使用并查集
 public class 岛问题 {
     public static void main(String[] args) {
+        String  AA="12432432";
+        String[] split = AA.split("");
+//boolean Boolean
+        char[] chars = AA.toCharArray();
+        System.out.println(chars);
         int[][] m1 = {
                 {0, 0, 1, 0, 1, 0},
                 {1, 1, 1, 0, 1, 0},
@@ -41,10 +46,10 @@ public class 岛问题 {
         int N = m[0].length;
         int res = 0;
         for (int i = 0; i < M; i++) {
-            for (int j = 0; j < N; j++) {
-                if (m[i][j] == 1) {
+            for (int j = 0; j < N; j++) {  //循环所有
+                if (m[i][j] == 1) { //如果有岛屿 那么数量++  然后将这一片都给感染掉  下次遍历的时候 就不进行岛屿数量++操作了
                     res++;
-                    infect(m, i, j, M, N);
+                    infect(m, i, j, M, N); //感染函数
                 }
             }
         }
