@@ -9,7 +9,6 @@ public class 插入排序 {
         for (int i : a) {
             System.out.print(i + "\t");
         }
-
     }
 
     public static int[] InsertSort(int[] arr) {
@@ -60,19 +59,18 @@ public class 插入排序 {
         return arr;
     }
 
-public static int[]  InsertTest(int[] arr){
-        for(int j=1;j<arr.length;j++){
-            int tar=arr[j];
-            int count=j-1;
-            while(count>=0 && arr[count]>tar){
-                arr[count+1]=arr[count];
+    public static int[] InsertTest(int[] arr) {
+        for (int j = 1; j < arr.length; j++) {
+            int tar = arr[j];
+            int count = j - 1;
+            while (count >= 0 && arr[count] > tar) {
+                arr[count + 1] = arr[count];
                 count--;
             }
-            arr[count+1] =tar;
+            arr[count + 1] = tar;
         }
-
         return arr;
-}
+    }
 }
 
 

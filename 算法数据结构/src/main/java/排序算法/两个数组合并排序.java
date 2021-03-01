@@ -2,10 +2,10 @@ package 排序算法;
 
 public class 两个数组合并排序 {
     public static void main(String[] args) {
-        int[] a = {4, 2, 6, 3, 0, 0, 0, 0, 0, 0};
-        int[] b = {5, 1, 7};
-        mergeArray(a, 4, b, 3);//1
-//        myMerge(a, 4, b, 3); //2
+        int[] a = {1,5,7,8,9,17,20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        int[] b = {0,2,4,6,7,17,18,23,25};
+//        mergeArray(a, 7, b, 9);//1
+        myMerge(a, 7, b, 9); //2
         System.out.print(a.toString());
         System.out.print(a.toString());
 

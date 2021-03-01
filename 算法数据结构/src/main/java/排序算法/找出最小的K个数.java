@@ -12,7 +12,6 @@ import java.util.Map;
 public class 找出最小的K个数 {
 
     public static void main(String[] args) {
-        Map<String, Object> stringObjectHashMap = new HashMap();
         int[] arr = {9, 4, 15, 7, 6, 8, 87, 5, 12, 34};
 //        ArrayList<Integer> arrayList = firstSortK(arr, 3);
 //        System.out.print(arrayList.toString());
@@ -47,7 +46,7 @@ public class 找出最小的K个数 {
             }
         }
         //将大顶堆输出 就是堆排序
-        for(int i =a.length-1; i>=0;i--){
+        for(int  i =a.length-1; i>=0;i--){
             int tem=a[i];
             a[i] =a[0];
             a[0] =tem;
