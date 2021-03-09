@@ -1,4 +1,4 @@
-package leetcode_normal;
+package leetcode_normal.数组;
 
 import java.util.HashMap;
 
