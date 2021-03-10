@@ -5,7 +5,6 @@ public class 跳台阶 {
         System.out.println(Jump2(6));
         System.out.println(Jump2(6));
         System.out.println(Jump3(6));
-
     }
 
 

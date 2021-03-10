@@ -30,6 +30,7 @@ public class VolatileDemo {
                 System.out.println(Thread.currentThread().getName() + "\t come in");
 
             try {
+//                Thread.sleep(20);
                 TimeUnit.SECONDS.sleep(3);
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -50,8 +51,8 @@ public class VolatileDemo {
 }
 
 class MyData {
-     int number = 0;
-//    volatile int number = 0;
+//     int number = 0;
+    volatile int number = 0;
 
     public void add() {
         this.number = 60;

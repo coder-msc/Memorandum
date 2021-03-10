@@ -1,4 +1,4 @@
-package com.scma.singletonle;
+package com.scma.gof23.singletonle;
 /*
 * 从名字上也很好理解，就是“比较勤”，实例在初始化的时候就已经建好了，不
 * 管你有没有用到，都先建好了再说。

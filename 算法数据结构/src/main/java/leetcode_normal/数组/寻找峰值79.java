@@ -36,7 +36,7 @@ public class 寻找峰值79 {
             return l;
         }
         int mid = l + (r - l) / 2;
-        if (arr[mid] > arr[mid+1]) {
+        if (arr[mid] > arr[mid+1]) { //表示下降 那么峰值 一定在前面
             return search(arr, l, mid);
         } else {
             return search(arr, mid + 1, r);

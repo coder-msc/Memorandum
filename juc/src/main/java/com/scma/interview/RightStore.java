@@ -20,6 +20,8 @@ public class RightStore{
     // 该方法存储或清除传入的权限，如果value为true，存储传入的权限，否则清除该权限。
     // position传入的权限的位置
     public void setRight(int position, boolean value){
+        StringBuilder ste=new StringBuilder("00");
+        ste.capacity();
         StringBuilder stringBuilder = new StringBuilder(rightString);
         if(value){
             stringBuilder.replace(position-1,position,"1");

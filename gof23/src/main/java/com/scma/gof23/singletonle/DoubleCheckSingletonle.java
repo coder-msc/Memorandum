@@ -1,4 +1,4 @@
-package com.scma.singletonle;
+package com.scma.gof23.singletonle;
 
 
 /*
