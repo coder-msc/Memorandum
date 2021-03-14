@@ -15,6 +15,7 @@ public class StaticInnerClassSingletonle {
 
     // 静态内部类
     private static class SingletonleHolder {
+
         private static final StaticInnerClassSingletonle INSTANCE = new StaticInnerClassSingletonle();
     }
 }
