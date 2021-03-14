@@ -1,4 +1,4 @@
-package com.scma.gof23.factory.简单工厂模式;
+package com.scma.gof23.工厂模式.简单工厂模式;
 
 /*简单车工厂 （静态工厂模式） 如果有新车品牌 会改变工厂代码
 

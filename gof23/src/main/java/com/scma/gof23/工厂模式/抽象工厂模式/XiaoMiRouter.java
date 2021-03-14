@@ -1,4 +1,4 @@
-package com.scma.gof23.factory.抽象工厂模式;
+package com.scma.gof23.工厂模式.抽象工厂模式;
 /*小米路由器*/
 public class XiaoMiRouter implements IRouterProduct {
     @Override

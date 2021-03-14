@@ -1,4 +1,4 @@
-package com.scma.gof23.factory.工厂方法模式;
+package com.scma.gof23.工厂模式.工厂方法模式;
 
 public class WuLingFactory implements CarFactory {
     @Override
