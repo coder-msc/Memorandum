@@ -1,4 +1,4 @@
-package com.scma.gof23.singletonle;
+package com.scma.gof23.单例模式;
 
 public enum Singleton {
     INSTANCE;
